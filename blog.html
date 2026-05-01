@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Remaks Mobilya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- HEADER -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="block">
+                        <img src="img/remakslogo.png" alt="Remaks Mobilya Logo"
+                            class="h-12 w-auto object-contain transition-transform duration-300 hover:scale-105">
+                    </a>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-500 hover:text-gray-900 hover:border-b-2 hover:border-gray-900 transition pb-1">Ana Sayfa</a>
+                    <a href="kurumsal.html" class="text-gray-500 hover:text-gray-900 hover:border-b-2 hover:border-gray-900 transition pb-1">Kurumsal</a>
+                    <a href="hakkimizda.html" class="text-gray-500 hover:text-gray-900 hover:border-b-2 hover:border-gray-900 transition pb-1">Hakkımızda</a>
+                    <a href="iletisim.html" class="text-gray-500 hover:text-gray-900 hover:border-b-2 hover:border-gray-900 transition pb-1">İletişim</a>
+                </nav>
+                <div class="md:hidden flex items-center">
+                    <button id="hamburger-btn" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                        <svg id="menu-icon" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                        <svg id="close-icon" class="h-8 w-8 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-xl">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="index.html" class="block px-4 py-4 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-md">Ana Sayfa</a>
+                <a href="kurumsal.html" class="block px-4 py-4 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-md">Kurumsal</a>
+                <a href="hakkimizda.html" class="block px-4 py-4 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-md">Hakkımızda</a>
+                <a href="iletisim.html" class="block px-4 py-4 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-md">İletişim</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="bg-gray-900 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <span class="text-xs font-semibold tracking-widest text-gray-400 uppercase mb-3 block">Remaks Mobilya</span>
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Blog & Sektör Yazıları</h1>
+            <p class="text-gray-400 text-lg max-w-2xl">Mobilya üretimi, sektör trendleri ve B2B tedarik süreçleri hakkında bilgi ve deneyimlerimizi paylaşıyoruz.</p>
+        </div>
+    </section>
+
+    <!-- BLOG KARTLARI -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Kart 1 -->
+                <a href="blog/blog-mdf-vs-sunta.html" class="card-hover bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden block group">
+                    <div class="bg-gray-900 h-48 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-950"></div>
+                        <svg class="w-16 h-16 text-gray-600 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                        </svg>
+                    </div>
+                    <div class="p-7">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="text-xs font-semibold uppercase tracking-widest text-gray-400 bg-gray-100 px-2 py-1 rounded">Üretim</span>
+                            <span class="text-xs text-gray-400">12 Mayıs 2025</span>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-gray-600 transition">Demonte Mobilyanın Yükselişi: Neden Flat-Pack Geleceğin Formatı?</h2>
+                        <p class="text-gray-500 text-sm leading-relaxed">E-ticarette kargo maliyetleri ve müşteri beklentileri değiştikçe demonte mobilya formatı neden kaçınılmaz hale geliyor?</p>
+                        <div class="mt-6 flex items-center text-sm font-medium text-gray-900 group-hover:gap-3 gap-2 transition-all">
+                            Devamını oku
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Kart 2 -->
+                <a href="blog/blog-mdf-vs-sunta.html" class="card-hover bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden block group">
+                    <div class="bg-gray-900 h-48 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br from-gray-700 to-gray-900"></div>
+                        <svg class="w-16 h-16 text-gray-600 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"/>
+                        </svg>
+                    </div>
+                    <div class="p-7">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="text-xs font-semibold uppercase tracking-widest text-gray-400 bg-gray-100 px-2 py-1 rounded">Malzeme</span>
+                            <span class="text-xs text-gray-400">28 Nisan 2025</span>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-gray-600 transition">MDF mi, Sunta mı? B2B Alıcılar İçin Kapsamlı Karşılaştırma</h2>
+                        <p class="text-gray-500 text-sm leading-relaxed">Hangi levha malzemesi hangi ürün grubuna daha uygundur? Maliyet, dayanım ve işlenebilirlik açısından detaylı analiz.</p>
+                        <div class="mt-6 flex items-center text-sm font-medium text-gray-900 group-hover:gap-3 gap-2 transition-all">
+                            Devamını oku
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Kart 3 -->
+                <a href="blog-b2b-tedarik.html" class="card-hover bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden block group">
+                    <div class="bg-gray-900 h-48 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br from-gray-900 to-gray-700"></div>
+                        <svg class="w-16 h-16 text-gray-600 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <div class="p-7">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="text-xs font-semibold uppercase tracking-widest text-gray-400 bg-gray-100 px-2 py-1 rounded">B2B</span>
+                            <span class="text-xs text-gray-400">10 Nisan 2025</span>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-gray-600 transition">E-Ticaret Satıcıları İçin Doğru Mobilya Tedarikçisini Seçme Rehberi</h2>
+                        <p class="text-gray-500 text-sm leading-relaxed">Trendyol, Hepsiburada ve Amazon'da satış yapanlar için tedarikçi seçiminde dikkat edilmesi gereken 7 kritik kriter.</p>
+                        <div class="mt-6 flex items-center text-sm font-medium text-gray-900 group-hover:gap-3 gap-2 transition-all">
+                            Devamını oku
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-gray-900 py-16 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl font-bold text-white mb-3">Toptan Üretim İçin Bizimle İletişime Geçin</h2>
+            <p class="text-gray-400 mb-6">Projenize özel üretim çözümleri için hemen teklif alın.</p>
+            <a href="iletisim.html" class="inline-block bg-white text-gray-900 px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition">Teklif Al</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-950 text-white py-16 border-t border-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <a href="index.html"><img src="img/remaksfooter.png" alt="Remaks Mobilya" class="h-8 w-auto"></a>
+                <p class="text-gray-600 text-xs">&copy; 2026 Remaks Mobilya. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+        hamburgerBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            menuIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

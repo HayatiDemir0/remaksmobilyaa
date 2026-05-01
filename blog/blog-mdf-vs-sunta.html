@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDF mi, Sunta mı? | Remaks Mobilya Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .prose p { margin-bottom: 1.5rem; color: #4B5563; line-height: 1.8; }
+        .prose h2 { font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 1rem; }
+        .prose h3 { font-size: 1.15rem; font-weight: 600; color: #1F2937; margin-top: 2rem; margin-bottom: 0.75rem; }
+        .prose ul { list-style: none; padding: 0; margin-bottom: 1.5rem; }
+        .prose ul li { padding-left: 1.5rem; position: relative; color: #4B5563; margin-bottom: 0.5rem; line-height: 1.7; }
+        .prose ul li::before { content: '—'; position: absolute; left: 0; color: #9CA3AF; }
+        .compare-table th { background: #111827; color: white; padding: 12px 16px; text-align: left; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+        .compare-table td { padding: 12px 16px; border-bottom: 1px solid #F3F4F6; color: #4B5563; font-size: 0.9rem; }
+        .compare-table tr:hover td { background: #F9FAFB; }
+        .badge-iyi { background: #D1FAE5; color: #065F46; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; }
+        .badge-orta { background: #FEF3C7; color: #92400E; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- HEADER -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="block">
+                        <img src="img/remakslogo.png" alt="Remaks Mobilya Logo"
+                            class="h-12 w-auto object-contain transition-transform duration-300 hover:scale-105">
+                    </a>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-500 hover:text-gray-900 hover:border-b-2 hover:border-gray-900 transition pb-1">Ana Sayfa</a>
+                    <a href="kurumsal.html" class="text-gray-500 hover:text-gray-900 hover:border-b-2 hover:border-gray-900 transition pb-1">Kurumsal</a>
+                    <a href="hakkimizda.html" class="text-gray-500 hover:text-gray-900 hover:border-b-2 hover:border-gray-900 transition pb-1">Hakkımızda</a>
+                    <a href="iletisim.html" class="text-gray-500 hover:text-gray-900 hover:border-b-2 hover:border-gray-900 transition pb-1">İletişim</a>
+                </nav>
+                <div class="md:hidden flex items-center">
+                    <button id="hamburger-btn" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                        <svg id="menu-icon" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                        <svg id="close-icon" class="h-8 w-8 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-xl">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="index.html" class="block px-4 py-4 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-md">Ana Sayfa</a>
+                <a href="kurumsal.html" class="block px-4 py-4 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-md">Kurumsal</a>
+                <a href="hakkimizda.html" class="block px-4 py-4 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-md">Hakkımızda</a>
+                <a href="iletisim.html" class="block px-4 py-4 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-md">İletişim</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- BREADCRUMB -->
+    <div class="bg-white border-b border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <nav class="flex items-center gap-2 text-sm text-gray-400">
+                <a href="index.html" class="hover:text-gray-700 transition">Ana Sayfa</a>
+                <span>/</span>
+                <a href="blog.html" class="hover:text-gray-700 transition">Blog</a>
+                <span>/</span>
+                <span class="text-gray-700">MDF mi, Sunta mı?</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- MAKALE -->
+    <main class="py-16 flex-1">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Başlık -->
+            <div class="mb-12">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-gray-500 bg-gray-100 px-3 py-1 rounded">Malzeme</span>
+                    <span class="text-sm text-gray-400">28 Nisan 2025</span>
+                    <span class="text-gray-300">·</span>
+                    <span class="text-sm text-gray-400">7 dk okuma</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+                    MDF mi, Sunta mı?<br>
+                    <span class="font-light text-gray-500">B2B Alıcılar İçin Kapsamlı Karşılaştırma</span>
+                </h1>
+                <p class="text-xl text-gray-500 leading-relaxed">Hangi levha malzemesi hangi ürün grubuna daha uygundur? Maliyet, dayanım ve işlenebilirlik açısından detaylı analiz.</p>
+            </div>
+
+            <!-- Ayraç -->
+            <div class="w-16 h-1 bg-gray-900 mb-12"></div>
+
+            <!-- İçerik -->
+            <div class="prose">
+                <p>
+                    Mobilya üretiminde hammadde seçimi; nihai ürünün ağırlığını, dayanıklılığını, görünümünü, kargo uyumluluğunu ve birim maliyetini doğrudan belirler. B2B alıcılar için bu karar, yalnızca bir teknik tercih değil, aynı zamanda stratejik bir tedarik kararıdır. Bu yazıda MDF (Medium Density Fibreboard) ile sunta (yonga levha / particleboard) arasındaki farkları üretici bakış açısından ele alıyoruz.
+                </p>
+
+                <h2>MDF Nedir?</h2>
+                <p>
+                    MDF, odun liflerinin yüksek basınç ve ısı altında reçine ile preslenmesiyle elde edilen yoğun, homojen bir levha malzemesidir. Yüzeyinin son derece düzgün ve gözenek boyutlarının küçük olması, boyama, folyo kaplama ve melamin laminasyon açısından rakipsiz bir alt zemin sunar.
+                </p>
+                <p>
+                    MDF, özellikle görünür yüzeylerin önem taşıdığı ürünlerde ve kesim kenarlarının hassas profil gerektirdiği durumlarda tercih edilir. TV üniteleri, kitaplık gövdeleri ve çalışma masası üst yüzeyleri bu kategorinin en yaygın örnekleridir.
+                </p>
+
+                <h2>Sunta (Yonga Levha) Nedir?</h2>
+                <p>
+                    Sunta, odun yongalarının veya talaşının basınç ve yapıştırıcı ile sıkıştırılmasıyla üretilir. MDF'ye kıyasla daha hafif ve daha düşük maliyetlidir; bu iki özellik onu e-ticaret odaklı yüksek hacimli üretim için cazip kılar. Yüzeyi melamin veya folyo kaplanarak estetik açıdan tatmin edici sonuçlar elde edilebilir; ancak MDF'nin yüzey hassasiyetine ulaşmak güçtür.
+                </p>
+
+                <h2>Karşılaştırma Tablosu</h2>
+            </div>
+
+            <!-- Tablo -->
+            <div class="mb-10 overflow-x-auto rounded-xl border border-gray-200 shadow-sm">
+                <table class="compare-table w-full">
+                    <thead>
+                        <tr>
+                            <th>Özellik</th>
+                            <th>MDF</th>
+                            <th>Sunta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="font-medium text-gray-700">Yüzey Kalitesi</td>
+                            <td><span class="badge-iyi">Çok İyi</span> — Pürüzsüz, folyo dostu</td>
+                            <td><span class="badge-orta">Orta</span> — Melamin ile iyileştirilebilir</td>
+                        </tr>
+                        <tr>
+                            <td class="font-medium text-gray-700">Ağırlık</td>
+                            <td><span class="badge-orta">Ağır</span> — Kargo maliyetini artırır</td>
+                            <td><span class="badge-iyi">Hafif</span> — Kargo avantajlı</td>
+                        </tr>
+                        <tr>
+                            <td class="font-medium text-gray-700">Birim Maliyet</td>
+                            <td><span class="badge-orta">Yüksek</span></td>
+                            <td><span class="badge-iyi">Düşük</span></td>
+                        </tr>
+                        <tr>
+                            <td class="font-medium text-gray-700">Vida Tutma Gücü</td>
+                            <td><span class="badge-iyi">İyi</span> — Yüzey vidası sağlam tutar</td>
+                            <td><span class="badge-orta">Orta</span> — Kenar vidaları gevşeyebilir</td>
+                        </tr>
+                        <tr>
+                            <td class="font-medium text-gray-700">Neme Dayanım</td>
+                            <td><span class="badge-orta">Düşük</span> — Nem şişmesi riski</td>
+                            <td><span class="badge-orta">Düşük-Orta</span> — Benzer risk</td>
+                        </tr>
+                        <tr>
+                            <td class="font-medium text-gray-700">CNC İşlenebilirlik</td>
+                            <td><span class="badge-iyi">Çok İyi</span> — Detaylı frezeleme</td>
+                            <td><span class="badge-orta">Orta</span> — Kırık kenar riski</td>
+                        </tr>
+                        <tr>
+                            <td class="font-medium text-gray-700">İdeal Kullanım</td>
+                            <td>TV ünitesi, masaüstü, cephe paneli</td>
+                            <td>Raf, iç bölme, arka panel, gövde</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="prose">
+                <h2>B2B Alıcı Perspektifinden: Hangisini Seçmelisiniz?</h2>
+                <p>
+                    Bu sorunun tek bir doğru yanıtı yoktur; cevap ürün kategorisine, sipariş hacmine ve nihai pazara göre değişir.
+                </p>
+                <ul>
+                    <li><strong>Premium segment, görünür yüzey ağırlıklı ürünler:</strong> MDF, yüzey kalitesi nedeniyle açık arayla daha uygun seçimdir.</li>
+                    <li><strong>Yüksek hacimli, maliyet odaklı raf ve depolama çözümleri:</strong> Sunta, hem ağırlık hem maliyet avantajıyla öne çıkar.</li>
+                    <li><strong>Hibrit yaklaşım:</strong> Pek çok üretici (biz dahil), görünür cephe panellerinde MDF, iç bölme ve arka panellerde sunta kullanarak her iki malzemenin avantajını tek üründe birleştirir.</li>
+                </ul>
+                <p>
+                    Bu hibrit yaklaşım, özellikle e-ticaret segmentinde hem müşteri gözündeki kalite algısını korurken hem de birim kargo maliyetini ve üretim maliyetini optimize etmenin en etkili yollarından biridir.
+                </p>
+
+                <h2>Remaks Mobilya'da Hammadde Seçimi</h2>
+                <p>
+                    Tüm B2B siparişlerimizde 1. sınıf hammadde kullanımı temel ilkemizdir. Hem MDF hem de sunta tedarikimizi belgelenmiş, standartlara uygun üreticilerden gerçekleştiriyor; gelen malzemeleri kabulde rutin kalite kontrol prosedürlerine tabi tutuyoruz. Bu sayede sipariş verdiğiniz ürün yüzlerce adet de olsa binlerce adet de olsa tutarlı hammadde kalitesiyle üretilir.
+                </p>
+                <p>
+                    Projeniz için en uygun malzeme kombinasyonunu belirlemek isterseniz, teknik ekibimiz ürün kategorinize ve bütçenize göre sizinle birlikte en verimli çözümü planlar.
+                </p>
+            </div>
+
+            <!-- Yazar / Geri -->
+            <div class="mt-16 pt-8 border-t border-gray-100 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-gray-900 rounded-full flex items-center justify-center text-white font-bold text-lg">R</div>
+                    <div>
+                        <p class="font-semibold text-gray-900">Remaks Mobilya</p>
+                        <p class="text-sm text-gray-400">Üretim & Sektör İçgörüleri</p>
+                    </div>
+                </div>
+                <a href="blog.html" class="flex items-center gap-2 text-sm text-gray-500 hover:text-gray-900 transition">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                    </svg>
+                    Tüm yazılara dön
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- CTA -->
+    <section class="bg-gray-900 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl font-bold text-white mb-3">Projeniz İçin Doğru Malzemeyi Birlikte Seçelim</h2>
+            <p class="text-gray-400 mb-6">Teknik ekibimiz ürün kategorinize en uygun kombinasyonu planlar.</p>
+            <a href="iletisim.html" class="inline-block bg-white text-gray-900 px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition">İletişime Geç</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-950 text-white py-16 border-t border-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <a href="index.html"><img src="img/remaksfooter.png" alt="Remaks Mobilya" class="h-8 w-auto"></a>
+                <p class="text-gray-600 text-xs">&copy; 2026 Remaks Mobilya. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+        hamburgerBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            menuIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
